@@ -341,13 +341,9 @@ ul {
 }
 
 .work .modal-content-wrapper {
-  @include vars.centered;
-  flex-direction: row;
-  gap: 18px;
-  @include media.media("<=tablet") {
-    justify-content: space-between;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column; // ✅ vertical stacking
+  gap: 24px;
 }
 
 .work-project {
