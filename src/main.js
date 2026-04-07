@@ -335,7 +335,7 @@ manager.onLoad = function () {
     loadingScreenButton.style.background = "#ead7ef";
     loadingScreenButton.style.color = "#6e5e9c";
     loadingScreenButton.style.boxShadow = "none";
-    loadingScreenButton.textContent = "~ 안녕하세요 ~";
+    loadingScreenButton.textContent = "~ Hello :3 ~";
     loadingScreen.style.background = "#ead7ef";
     isDisabled = true;
 
@@ -1531,7 +1531,7 @@ let currentHoveredObject = null;
 
 const socialLinks = {
   GitHub: "https://crunchylemon.itch.io/",
-  YouTube: "https://youtu.be/AB6sulUMRGE",
+  YouTube: "https://www.youtube.com/@ShivamPrasad.dev.3d",
   Twitter: "https://x.com/Heroplayz9",
 };
 
