@@ -1530,9 +1530,9 @@ let currentIntersects = [];
 let currentHoveredObject = null;
 
 const socialLinks = {
-  GitHub: "https://github.com/andrewwoan/sooahkimsfolio",
+  GitHub: "https://crunchylemon.itch.io/",
   YouTube: "https://youtu.be/AB6sulUMRGE",
-  Twitter: "https://www.twitter.com/",
+  Twitter: "https://x.com/Heroplayz9",
 };
 
 const raycaster = new THREE.Raycaster();
