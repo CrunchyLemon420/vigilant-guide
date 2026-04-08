@@ -341,29 +341,41 @@ ul {
 }
 
 .work .modal-content-wrapper {
-  @include vars.centered;
-  flex-direction: row;
-  gap: 18px;
-  @include media.media("<=tablet") {
-    justify-content: space-between;
-    flex-direction: column;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 cards side by side
+  gap: 24px;
+  align-items: start;
 }
 
 .work-project {
+  width: 100%;
   padding-top: 16px;
-  @include vars.centered;
+  display: flex;
   flex-direction: column;
   gap: 28px;
-  width: 80%;
-  justify-content: start;
-  height: 100%;
-  @include media.media("<=tablet") {
-    height: auto;
-    width: 100%;
-    padding-bottom: 24px;
+}
+
+/* Make "3D Work" header span full width */
+.modal-paragraph-header-2 {
+  grid-column: 1 / -1;
+}
+
+/* Mobile responsiveness */
+@include media.media("<=tablet") {
+  .work .modal-content-wrapper {
+    grid-template-columns: 1fr; // stack on mobile
   }
 }
+
+.section-divider {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 40px 0 10px 0;
+  padding-top: 20px;
+  border-top: 2px solid vars.$base-purple;
+  font-family: "Motley Forces";
+}
+
 
 .work-project-wrapper {
   width: 100%;
